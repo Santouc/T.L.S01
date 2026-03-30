@@ -7,7 +7,7 @@ Repositorio del grupo X para el proyecto del ramo *Proyecto Inicial (IWG400)* ‚Ä
 | Nombre y Apellido | Usuario GitHub | Correo USM               | Rol USM      |
 | ----------------- | -------------- | ------------------------ | ------------ |
 | Benjam√≠n Cerda | @bcerdafilippi     | bcerdaf@usm.cl | 2026300420 |
-| Amira Lizana  | @Tiar-e     | nombre2.apellido2@usm.cl | 200000000000 |
+| Amira Lizana  | @Tiar-e     | alizana@usm.cl | 2026300056|
 | Santiago Silva | @Santouc      | ssilvap@usm.cl | 2026300099 |
 
 

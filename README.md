@@ -58,12 +58,7 @@ Lo que queda fuera del alcance es la integración al sistema Arduino Uno Q, debi
 
 ---
 
-## 📐 Diseño del Sistema
-![Diagrama de Conexiones](./assets/diagrama_conexiones.png)
 
-*Explicacion grafica de como es la conexion entre el microcontrolador y los sensores*
-
----
 
 ## 📅 Cronograma de trabajo
 

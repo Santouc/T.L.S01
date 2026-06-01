@@ -31,10 +31,7 @@ Lo que queda fuera del alcance es la integración al sistema Arduino Uno Q, debi
 ## 🛠️ Tecnologías y herramientas utilizadas
 
 - Lenguaje(s) de programación:
-  - Ej: Python, JavaScript, C++
-- Microcontroladores
-  - Arduino UNO Q
-- Sensores
+  - Python, Json
 
 ---
 

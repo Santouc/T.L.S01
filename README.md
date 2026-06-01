@@ -10,17 +10,16 @@ Repositorio del grupo X para el proyecto del ramo *Proyecto Inicial (IWG400)* �
 | Amira Lizana  | @Tiar-e     | alizana@usm.cl | 2026300056|
 | Santiago Silva | @Santouc      | ssilvap@usm.cl | 2026300099 |
 
-
-> Un dispositivo que a través de una camara pueda procesar los movimientos de las manos de el lenguaje de señas chileno y sea capaz de asimilarlo en el arduino uno q y pueda enviarlo como voz. La motivación nuestra al hacer este proyecto es poder facilitar la comunicación entre personas sordomudas a las demás personas.
+"Es un software capaz de aprender cualquier lenguaje de señas basado en el reconocimiento de la mano en 21 puntos a través de una cámara. Nuestra motivación al realizar este proyecto es facilitar la comunicación entre las personas sordomudas y el resto de la sociedad."
 
 ---
 
 ## 🎯 Objetivos
 
 - Objetivo general:
-  - Traductor de lengua de señas chileno
+  - Crear un software, el cual sea capaz de aprender cualquier lenguaje de señas en base a un entrenamiento del software mediante fotogramas y la detección de la forma de la mano
 - Objetivos específicos:
-  - Traducir de lenguaje de señas chileno a lenguaje verbal a través de un dispositivo
+   La capacidad del software de poder detectar sin mayores problemas la forma y posición de la mano.
 ---
 
 ## 🧩 Alcance del proyecto

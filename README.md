@@ -25,9 +25,8 @@ Repositorio del grupo X para el proyecto del ramo *Proyecto Inicial (IWG400)* �
 
 ## 🧩 Alcance del proyecto
 
-> *Definir qué aspectos cubre el proyecto y qué queda fuera del alcance (limitaciones).*
-
----
+Es un modelo capaz de aprender un lenguaje de señas, tanto estáticas como dinámicas.
+Lo que queda fuera del alcance es la integración al sistema Arduino Uno Q, debido a limitaciones de tiempo y hardware.
 
 ## 🛠️ Tecnologías y herramientas utilizadas
 

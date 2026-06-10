@@ -115,7 +115,7 @@ Etapa 1, entrenamiento.
 
 Etapa 2, enseñanza.
 
-Para cargar los datos previamente guardados en la terminal ejecute"py ml/train.py" o "py ml/train_dynamic.py", con estos comandos guardará los datos previamente entrenados. 
+Para cargar los datos previamente guardados en la terminal ejecute "py ml/train.py" o "py ml/train_dynamic.py", con estos comandos guardará los datos previamente entrenados. 
 
 Etapa 3, ejecución.
 

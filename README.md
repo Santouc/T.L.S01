@@ -37,13 +37,65 @@ Lo que queda fuera del alcance es la integración al sistema Arduino Uno Q, debi
 ## 🗂️ Estructura del repositorio
 
 ```
-/PROY-2026-GRUPOX
+/Mimo
 │
-├── docs/               # Documentación general y reportes
-├── src/                # Código fuente del proyecto
-├── tests/              # Casos de prueba
-├── assets/             # Imágenes, diagramas, etc.
-└── README.md           # Este archivo
+├── api/                        # API REST para servir el modelo
+│   ├── Dockerfile              # Imagen Docker de la API
+│   ├── README.md               # Documentación de la API
+│   ├── client_examples.py      # Ejemplos de cliente para consumir la API
+│   ├── docker-compose.yml      # Orquestación de contenedores
+│   ├── main.py                 # Punto de entrada del servidor API
+│   └── requirements.txt        # Dependencias de la API
+│
+├── core/                       # Lógica central de visión y datos
+│   ├── dataset_utils.py        # Utilidades para manejo de datasets
+│   ├── hand_detector.py        # Detección de manos (MediaPipe)
+│   ├── image_processor.py      # Procesamiento de imágenes
+│   └── preprocessing.py        # Preprocesamiento de landmarks
+│
+├── ml/                         # Machine Learning (entrenamiento e inferencia)
+│   ├── __init__.py             # Inicializador del paquete
+│   ├── clasificador.py         # Clasificador de señas estáticas
+│   ├── data_capture.py         # Captura de datos de entrenamiento
+│   ├── data_processor.py       # Procesamiento de datos
+│   ├── deployment_manager.py   # Gestión de despliegue de modelos
+│   ├── dynamic_classifier.py   # Clasificador de señas dinámicas
+│   ├── model_evaluator.py      # Evaluación de modelos
+│   ├── realtime_optimizer.py   # Optimización en tiempo real
+│   ├── train.py                # Entrenamiento del modelo estático
+│   └── train_dynamic.py        # Entrenamiento del modelo dinámico
+│
+├── data/                       # Datos y modelos entrenados
+│   ├── datasets/               # Datasets de entrenamiento
+│   │   ├── dataset_dynamic.json    # Dataset de señas dinámicas
+│   │   └── dataset_static.json     # Dataset de señas estáticas
+│   └── models/                 # Modelos y etiquetas
+│       ├── hand_landmarker.task    # Modelo de landmarks de MediaPipe
+│       ├── labels.json             # Etiquetas estáticas
+│       ├── labels_dynamic.json     # Etiquetas dinámicas
+│       ├── model.h5                # Modelo estático entrenado
+│       └── model_dynamic.h5        # Modelo dinámico entrenado
+│
+├── utils/                      # Utilidades generales
+│   ├── __init__.py             # Inicializador del paquete
+│   ├── config.py               # Configuración del proyecto
+│   └── logger.py               # Sistema de logging
+│
+├── docs/                       # Documentación general y reportes
+│   ├── anexo_tecnico.md        # Anexo técnico
+│   ├── conceptos.md            # Conceptos teóricos
+│   └── manual_uso.md           # Manual de uso
+│
+├── logs/                       # Archivos de registro (logs)
+├── models/                     # Carpeta de modelos (auxiliar)
+├── temp/                       # Archivos temporales
+│
+├── main.py                     # Aplicación principal (reconocimiento en vivo)
+├── teaching.py                 # Herramienta de captura y enseñanza de señas
+├── dataset_static.json         # Dataset de señas estáticas (raíz)
+├── requirements.txt            # Dependencias del proyecto
+├── .gitignore                  # Archivos ignorados por Git
+└── README.md                   # Este archivo
 ```
 
 ---

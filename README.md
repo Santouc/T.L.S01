@@ -103,9 +103,24 @@ Lo que queda fuera del alcance es la integración al sistema Arduino Uno Q, debi
 ## 🚀 Instrucciones de Instalacion y Uso
 
 
-1. **Clonar el repositorio:** `git clone ...`
-2. **Dependencias:** Listar qué librerías necesitan (ej: `pip install -r requirements.txt` o librerías de Arduino).
+1. **Clonar el repositorio:** `git clone <URL-del-repositorio>
+cd Mimo`
+2. **Dependencias:** El proyecto usa Python 3.9–3.12. Instala las librerías necesarias con: pip install -r requirements.txt
 3. **Ejecución:** Cómo se corre el código principal.
+El código tiene 3 principales archivos ejectubales para el funcionamiento del software y se dividen en etapas.
+
+Etapa 1, entrenamiento.
+
+"py teaching.py" que abre la cámara con una interfaz con la cual puedes "enseñarle" una letra del alfabeto / letra ∈ [a,z]. Para abrir esta interfaz presionar letra "m" y para seleccionar una letra ocupará las flechas "arriba" y "abajo" y presionará botón "enter" para seleccionarla. Luego podrá decidir entre captura "dinámica" o "estática" en ambos casos para capturar la imagen presionará la letra "t", en caso de ser el modo dinámico comenzará la "grabación" y terminará luego la grabación presionando la letra "t" nuevamente. Una vez terminada la sesión de entrenamiento, presione la letra "q" para cerrar la interfaz. Idealmente tomar más de 40 muestra por seña para que el sistema tenga una base de referencias considerable.
+
+Etapa 2, enseñanza.
+
+Para cargar los datos previamente guardados en la terminal ejecute"py ml/train.py" o "py ml/train_dynamic.py", con estos comandos guardará los datos previamente entrenados. 
+
+Etapa 3, ejecución.
+
+Una vez los datos guardados para poder ponerlos a prueba ejecute "py main.py" esto abrirá la cámara y podrá realizar la seña y el sistema la traducirá a la letra que ha decidido enseñarle correctamente.
+
 
 ---
 
